@@ -4,7 +4,6 @@ Esse programa é um sistema básico de gerenciamento de produtos e vendas desenv
 ### Ruby é Fortemente Tipada
 Isso significa que não há conversão implícita entre tipos incompatíveis. Em outras palavras, se você tentar combinar valores de tipos diferentes, Ruby vai lançar um erro em vez de tentar adivinhar o que você quis fazer.
 
-
 ### Ruby é de Tipagem Dinâmica
 Você não precisa declarar o tipo de uma variável ao criá-la. O tipo é atribuído automaticamente com base no valor atribuído à variável, e você pode alterar esse tipo durante a execução do programa.
 
