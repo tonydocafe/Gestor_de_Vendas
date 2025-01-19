@@ -167,10 +167,10 @@ Exemplo de limpeza:
 dados = [1, 2, 3, 4]
 dados.reject! { |n| n.even? } # Remove números pares
 puts dados.inspect # [1, 3]
+```
 9. Tratamento de Exceções
 Ajuda a lidar com erros.
-
-
+```ruby
 begin
   numero = Integer("abc")
 rescue ArgumentError => e
@@ -178,8 +178,9 @@ rescue ArgumentError => e
 ensure
   puts "Finalizando a operação."
 end
+```
 Exemplo com retry:
-
+```ruby
 begin
   print "Digite um número: "
   numero = Integer(gets)
@@ -187,4 +188,5 @@ rescue ArgumentError
   puts "Entrada inválida. Tente novamente."
   retry
 end
+```
 puts "Número válido: #{numero}"
