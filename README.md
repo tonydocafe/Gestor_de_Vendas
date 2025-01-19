@@ -143,7 +143,7 @@ end
 Ruby permite trabalhar com classes aninhadas e recursos como DSLs (Domain-Specific Languages).
 
 Exemplo com classe aninhada:
-
+```ruby
 class Venda
   class Item
     attr_accessor :nome, :quantidade
@@ -157,11 +157,13 @@ end
 
 item = Venda::Item.new("Caneta", 10)
 puts item.nome # Caneta
+
+
 #### 8. Gerenciamento de Memória
 O garbage collector elimina automaticamente objetos não referenciados.
 
 Exemplo de limpeza:
-
+```ruby
 dados = [1, 2, 3, 4]
 dados.reject! { |n| n.even? } # Remove números pares
 puts dados.inspect # [1, 3]
