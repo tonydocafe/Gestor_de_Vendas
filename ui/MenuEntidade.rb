@@ -27,7 +27,7 @@ class MenuEntidade < MenuAbstrato
     when 3
       remover(scanner)
     else
-      warn 'OPCAO INVALIDA\n'
+      warn "OPCAO INVALIDA\n"
     end
     1
   end

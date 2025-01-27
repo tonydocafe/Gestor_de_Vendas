@@ -22,7 +22,7 @@ class MenuVenda < MenuEntidade
         loop do
           begin
             print "\nDigite o nome do produto: "
-            produto = @dao_produto.buscar(scanner.gets.chomp)
+            produto = @dao_produto.buscar_por_nome(scanner.gets.chomp)
   
             print "Digite a quantidade: "
             qtd = scanner.gets.chomp.to_i
