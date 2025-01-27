@@ -25,14 +25,14 @@ class MenuProduto < MenuEntidade
 
     loop do
       begin
-        print '\nDigite o nome: '
+        print "\nDigite o nome: "
         nome = scanner.gets.strip
 
         print 'Digite o valor: '
         valor = Float(scanner.gets.strip)
 
         if nome.empty? || valor <= 0.0
-          raise StandardError, '\nFavor informar os dados corretamente.\n'
+          raise StandardError, "\nFavor informar os dados corretamente.\n"
         else
           break
         end
@@ -49,11 +49,11 @@ class MenuProduto < MenuEntidade
 
     loop do
       begin
-        print '\nDigite o nome: '
+        print "\nDigite o nome: "
         nome = scanner.gets.strip
 
         if nome.empty?
-          raise StandardError, '\nFavor informar o nome corretamente.\n'
+          raise StandardError, "\nFavor informar o nome corretamente.\n"
         else
           break
         end
@@ -62,6 +62,6 @@ class MenuProduto < MenuEntidade
       end
     end
 
-    @dao.remover(nome)
+    @dao.remover_por_nome(nome)
   end
 end
